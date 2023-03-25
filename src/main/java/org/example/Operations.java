@@ -9,20 +9,19 @@ public class Operations{
       return "Empty string(s) passed!";
     String result = s1+" "+s2;
     System.out.print(result);
+    System.out.print("\n");
     return result;
   }
-
   public int divide_print(int a, int b){
-    try {
-      if (b == 0)
+
+    if (b == 0){
         throw new ArithmeticException();
-    }
-    catch(ArithmeticException e){
-      System.out.print("Division By Zero!");
-      return -1;
+//        System.out.print("Division By Zero!");
+//        return -1;
     }
     int result =a/b;
     System.out.println(result);
+    System.out.print("\n");
     return result;
   }
 
@@ -46,9 +45,9 @@ public class Operations{
     return b - a;
   }
 
-  public static void main(String[] args){
-    System.out.println("hada");
-  }
+//  public static void main(String[] args){
+//    System.out.println("hada");
+//  }
 
 }
 
